@@ -5,12 +5,12 @@ import { useState } from "react";
 import BrandLogo from "./BrandLogo";
 
 const links = [
-  { href: "#experience", label: "Experience" },
-  { href: "#venue", label: "The Space" },
-  { href: "#story", label: "Our Story" },
-  { href: "#menu", label: "Menu" },
-  { href: "#vibe", label: "The Vibe" },
-  { href: "#visit", label: "Visit Us" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/#venue", label: "The Space" },
+  { href: "/#story", label: "Our Story" },
+  { href: "/menu", label: "Menu" },
+  { href: "/#vibe", label: "The Vibe" },
+  { href: "/#visit", label: "Visit Us" },
 ];
 
 export default function Navigation() {

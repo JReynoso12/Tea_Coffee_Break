@@ -71,7 +71,7 @@ export default function VideoScrolly() {
             extraordinary.
           </p>
           <a
-            href="#menu"
+            href="/menu"
             className="btn-pill-primary mt-10 inline-flex px-10 py-3.5 text-[0.78rem] font-medium uppercase tracking-[0.15em]"
           >
             Explore Our Menu
@@ -154,7 +154,7 @@ export default function VideoScrolly() {
         </motion.p>
 
         <motion.a
-          href="#menu"
+          href="/menu"
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}

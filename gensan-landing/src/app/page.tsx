@@ -1,7 +1,6 @@
 import CustomCursor from "@/components/CustomCursor";
 import Divider from "@/components/Divider";
 import EcoSection from "@/components/EcoSection";
-import MenuSection from "@/components/MenuSection";
 import VideoScrolly from "@/components/VideoScrolly";
 import Navigation from "@/components/Navigation";
 import ReviewsSection from "@/components/ReviewsSection";
@@ -22,8 +21,6 @@ export default function Home() {
         <VenueSection />
         <Divider />
         <StorySection />
-        <Divider />
-        <MenuSection />
         <Divider />
         <VibeSection />
         <Divider />

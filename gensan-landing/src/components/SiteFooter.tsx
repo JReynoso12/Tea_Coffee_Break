@@ -22,25 +22,25 @@ export default function SiteFooter() {
             Navigate
           </h4>
           <nav className="flex flex-col gap-2 text-[0.85rem] text-[var(--text-muted)]">
-            <a href="#experience" className="transition-colors hover:text-[var(--cream)]">
+            <a href="/#experience" className="transition-colors hover:text-[var(--cream)]">
               Experience
             </a>
-            <a href="#venue" className="transition-colors hover:text-[var(--cream)]">
+            <a href="/#venue" className="transition-colors hover:text-[var(--cream)]">
               The Space
             </a>
-            <a href="#story" className="transition-colors hover:text-[var(--cream)]">
+            <a href="/#story" className="transition-colors hover:text-[var(--cream)]">
               Our Story
             </a>
-            <a href="#menu" className="transition-colors hover:text-[var(--cream)]">
+            <a href="/menu" className="transition-colors hover:text-[var(--cream)]">
               Menu
             </a>
-            <a href="#vibe" className="transition-colors hover:text-[var(--cream)]">
+            <a href="/#vibe" className="transition-colors hover:text-[var(--cream)]">
               The Vibe
             </a>
-            <a href="#visit" className="transition-colors hover:text-[var(--cream)]">
+            <a href="/#visit" className="transition-colors hover:text-[var(--cream)]">
               Visit Us
             </a>
-            <a href="#reviews" className="transition-colors hover:text-[var(--cream)]">
+            <a href="/#reviews" className="transition-colors hover:text-[var(--cream)]">
               Reviews
             </a>
           </nav>

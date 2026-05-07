@@ -31,14 +31,14 @@ export default function VenueSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-8%" }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className="overflow-hidden rounded-sm border border-[rgba(226,149,66,0.22)] bg-[rgba(45,32,26,0.4)]"
+          className="overflow-hidden rounded-sm border border-[rgba(226,149,66,0.24)] bg-[rgba(30,22,16,0.65)]"
         >
-          <div className="relative aspect-[21/10] w-full md:aspect-[24/9]">
+          <div className="relative h-[300px] w-full bg-[rgba(16,12,9,0.75)] md:h-[420px]">
             <Image
               src={hero.src}
               alt={hero.alt}
               fill
-              className="object-cover object-center"
+              className="object-contain object-center"
               sizes="(max-width:1200px) 100vw, 1152px"
               priority
             />
@@ -63,14 +63,14 @@ export default function VenueSection() {
                 delay: i * 0.05,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="overflow-hidden rounded-sm border border-[rgba(226,149,66,0.18)] bg-[rgba(45,32,26,0.35)]"
+              className="overflow-hidden rounded-sm border border-[rgba(226,149,66,0.2)] bg-[rgba(30,22,16,0.6)]"
             >
-              <div className="relative aspect-[4/3] w-full">
+              <div className="relative h-[240px] w-full bg-[rgba(16,12,9,0.72)] md:h-[280px]">
                 <Image
                   src={item.src}
                   alt={item.alt}
                   fill
-                  className="object-cover object-center"
+                  className="object-contain object-center"
                   sizes="(max-width:640px) 100vw, 50vw"
                 />
               </div>

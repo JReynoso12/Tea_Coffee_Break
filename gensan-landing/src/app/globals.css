@@ -5,20 +5,20 @@
  * bronze secondary (#915F25), off-white text (#F8F7F7). Content unchanged.
  */
 :root {
-  --cream: #f8f7f7;
-  --cream-dark: #c4bcb4;
-  --espresso: #0f0f0f;
-  --espresso-mid: #151515;
-  --roast: #915f25;
-  --caramel: #e29542;
-  --gold: #ebb872;
-  --bronze: #915f25;
+  --cream: #f8f2ea;
+  --cream-dark: #cfb9a2;
+  --espresso: #090909;
+  --espresso-mid: #111111;
+  --roast: #6f4a2a;
+  --caramel: #ef8c2f;
+  --gold: #f0b66b;
+  --bronze: #8a5a2f;
   --sage: #4a7c59;
   --burgundy: #6b2d38;
   --warm-white: #f8f7f7;
-  --text-muted: #8f8780;
-  --accent-rgb: 226, 149, 66;
-  --bronze-rgb: 145, 95, 37;
+  --text-muted: #9d8d7f;
+  --accent-rgb: 239, 140, 47;
+  --bronze-rgb: 138, 90, 47;
   --btn-text-on-accent: #f8f7f7;
 }
 
