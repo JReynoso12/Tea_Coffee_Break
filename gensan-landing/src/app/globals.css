@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+/**
+ * Visual reference: premium café UI — deep charcoal, warm orange accent (#E29542),
+ * bronze secondary (#915F25), off-white text (#F8F7F7). Content unchanged.
+ */
+:root {
+  --cream: #f8f7f7;
+  --cream-dark: #c4bcb4;
+  --espresso: #0f0f0f;
+  --espresso-mid: #151515;
+  --roast: #915f25;
+  --caramel: #e29542;
+  --gold: #ebb872;
+  --bronze: #915f25;
+  --sage: #4a7c59;
+  --burgundy: #6b2d38;
+  --warm-white: #f8f7f7;
+  --text-muted: #8f8780;
+  --accent-rgb: 226, 149, 66;
+  --bronze-rgb: 145, 95, 37;
+  --btn-text-on-accent: #f8f7f7;
+}
+
+@theme inline {
+  --font-sans: ui-sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-10vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.animate-float-up {
+  animation-name: float-up;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 1px;
+  width: 0;
+  background: var(--caramel);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/** Primary CTA — pill + warm glow on hover (reference UI kit) */
+.btn-pill-primary {
+  border-radius: 9999px;
+  background: var(--caramel);
+  color: var(--btn-text-on-accent);
+  transition:
+    box-shadow 0.35s ease,
+    transform 0.35s ease,
+    background-color 0.35s ease;
+}
+
+.btn-pill-primary:hover {
+  box-shadow:
+    0 0 28px rgba(var(--accent-rgb), 0.45),
+    0 0 56px rgba(var(--accent-rgb), 0.18);
+}
+
+html.custom-cursor-on {
+  cursor: none;
+}
+
+html.custom-cursor-on a,
+html.custom-cursor-on button {
+  cursor: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  html.custom-cursor-on {
+    cursor: auto;
+  }
+}
