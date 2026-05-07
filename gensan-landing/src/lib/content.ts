@@ -64,6 +64,25 @@ export type MenuCategory = "all" | "coffee" | "tea" | "food";
 export const menuPromo =
   "Foodpanda: use voucher code EATNA for ₱100 off when you order above ₱399.";
 
+/** Product photography for the gallery — files in /public/menu */
+export const menuGalleryPhotos = [
+  { src: "/menu/tcb-drink.png", alt: "TCB signature iced drink" },
+  { src: "/menu/iced-caramel-macchiato.png", alt: "Iced Caramel Macchiato" },
+  { src: "/menu/iced-dolce-latte.png", alt: "Iced Dolce Latte" },
+  { src: "/menu/iced-cappuccino.png", alt: "Iced Cappuccino" },
+  { src: "/menu/iced-cafe-latte.png", alt: "Iced Cafe Latte" },
+  { src: "/menu/hot-cappuccino-dose.png", alt: "Hot Cappuccino — dose" },
+  { src: "/menu/hot-americano-dose.png", alt: "Hot Americano — dose" },
+  { src: "/menu/hot-cafe-latte-dose.png", alt: "Hot Cafe Latte — dose" },
+  { src: "/menu/hot-caramel-macchiato-dose.png", alt: "Hot Caramel Macchiato — dose" },
+  { src: "/menu/iced-passionberry-tea.png", alt: "Iced Passionberry Tea — De Sais" },
+  { src: "/menu/beef-tapa.png", alt: "Beef Tapa with rice and egg" },
+  { src: "/menu/corned-beef.png", alt: "Corned Beef meal" },
+  { src: "/menu/tuna-sandwich.png", alt: "Tuna sandwich" },
+  { src: "/menu/chicken-sandwich.png", alt: "Chicken sandwich" },
+  { src: "/menu/carbonara.png", alt: "Carbonara pasta" },
+] as const;
+
 export const menuItems = [
   {
     id: "tcb-drink",
